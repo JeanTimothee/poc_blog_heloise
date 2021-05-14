@@ -27,6 +27,7 @@ export default {
   ],
   plugins: [{ src: "~/plugins/uikit.js", ssr: false }],
   modules: ["@nuxtjs/markdownit", "@nuxtjs/strapi"],
+  buildModules: ["@nuxtjs/tailwindcss"],
   strapi: {
     url: strapiBaseUri,
     entities: [
